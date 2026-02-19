@@ -15,7 +15,7 @@ Aplicação desktop de bloco de notas desenvolvida com CustomTkinter.
 - CustomTkinter
 - Tkinter
 
-## HOW EXECUTE:
+## How execute the exe by python code:
 
 ```bash
 pip install customtkinter
