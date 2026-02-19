@@ -2,7 +2,11 @@ import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
-# Made by Gabriel Augusto
+
+
+# Made by Gabriel Augusto/github: gabriel-augustovieirapinto
+
+
 # White theme configs
 ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
@@ -249,4 +253,5 @@ class NotesUI(ctk.CTk):
 if __name__ == "__main__":
     app = NotesUI()
     app.mainloop()
+
 
