@@ -2,8 +2,8 @@ import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
-
-# ===== Configuração tema claro =====
+# Made by Gabriel Augusto
+# White theme configs
 ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
@@ -21,7 +21,7 @@ class NotesUI(ctk.CTk):
 
         self.configure(bg="#e9eef3")
 
-        # ===== Container principal =====
+        # Main container
         self.container = ctk.CTkFrame(
             self,
             corner_radius=20,
@@ -32,7 +32,7 @@ class NotesUI(ctk.CTk):
         self.container.grid_columnconfigure(1, weight=1)
         self.container.grid_rowconfigure(1, weight=1)
 
-        # ===== Sidebar =====
+        # Sidebar
         self.sidebar = ctk.CTkFrame(
             self.container,
             width=220,
@@ -91,7 +91,7 @@ class NotesUI(ctk.CTk):
         )
         self.btn_delete.pack(pady=10, padx=20)
 
-        # ===== Topbar =====
+        # Topbar
         self.topbar = ctk.CTkFrame(
             self.container,
             height=40,
@@ -138,7 +138,7 @@ class NotesUI(ctk.CTk):
         )
         self.btn_close.pack(side="left")
 
-        # ===== Área de Texto =====
+        # Text area
         self.text_area = ctk.CTkTextbox(
             self.container,
             corner_radius=15,
@@ -152,7 +152,7 @@ class NotesUI(ctk.CTk):
 
         self.text_area.bind("<<Modified>>", self.on_modified)
 
-    # ================= BACKEND =================
+    # Backend/logic
 
     def new_note(self):
         if self.confirm_unsaved():
@@ -233,7 +233,7 @@ class NotesUI(ctk.CTk):
         if self.confirm_unsaved():
             self.destroy()
 
-    # ===== Movimento da janela =====
+    # Window movement
     def start_move(self, event):
         self.x = event.x
         self.y = event.y
@@ -249,3 +249,4 @@ class NotesUI(ctk.CTk):
 if __name__ == "__main__":
     app = NotesUI()
     app.mainloop()
+
