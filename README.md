@@ -1,2 +1,22 @@
-# Notepad
-That's an notepad, a project that took me 2 weeks.
+# Modern Notes App
+
+Aplicação desktop de bloco de notas desenvolvida com CustomTkinter.
+
+## Features
+- Criar nova nota
+- Salvar arquivo .txt
+- Abrir notas existentes
+- Excluir notas
+- Detecção de alterações não salvas
+- Interface moderna customizada
+
+## Techs
+- Python
+- CustomTkinter
+- Tkinter
+
+## HOW EXECUTE:
+
+```bash
+pip install customtkinter
+python main.py
